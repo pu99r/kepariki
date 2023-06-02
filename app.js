@@ -13,9 +13,12 @@ app.use(ssr);
 
 const mainregRoute = require('./routes/mainreg.routes');
 const mainRoute = require('./routes/main.routes');
+const themeRoute = require('./routes/theme.routes');
 
 app.use('/', mainregRoute);
 app.use('/main', mainRoute);
+app.use('/theme', themeRoute);
+
 
 app.listen(PORT, () => {
   console.log(`Этот сервер умирает на ${PORT} порту`);
