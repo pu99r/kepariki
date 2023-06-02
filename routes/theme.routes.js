@@ -60,6 +60,7 @@ router.post("/", async (req, res) => {
             thems: ThemeAll,
             themeqa: ThemeQA,
             qustionid: count,
+            score: score
           })
         );
 

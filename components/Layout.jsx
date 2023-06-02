@@ -1,6 +1,6 @@
 const React = require("react");
 
-function Layout({ title, children , name}) {
+function Layout({ title, children, name }) {
   return (
     <html lang="en">
       <head>
@@ -14,8 +14,10 @@ function Layout({ title, children , name}) {
         <link rel="stylesheet" href="/styles/style.css" />
         <script defer src="/scripts/script.js" />
       </head>
-      <h1 className="NavBar">Игрок: {name}</h1>
-      <body>{children}</body>
+      <div className="bigdiv">
+        <h1 className="NavBar">Игрок: {name}</h1>
+        <body>{children}</body>
+      </div>
     </html>
   );
 }

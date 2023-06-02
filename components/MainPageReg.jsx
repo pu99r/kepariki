@@ -18,7 +18,7 @@ function MainPageReg({ title }) {
       <body>
         <form action="/main" method="POST">
           <div className="mb-3">
-            <label for="exampleInputEmail1" className="form-label">
+            <label for="exampleInputEmail1" className="form-label namereg">
               Как Вас зовут?
             </label>
             <input
@@ -28,10 +28,10 @@ function MainPageReg({ title }) {
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
             />
+            <button type="submit" className="btn btn-primary">
+              Войти
+            </button>
           </div>
-          <button type="submit" className="btn btn-primary">
-            Войти
-          </button>
         </form>
       </body>
     </html>
