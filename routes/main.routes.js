@@ -26,7 +26,20 @@ router.post("/", async (req, res) => {
     res.json(message);
   }
 });
+router.get("/" , async (req, res) => {
+  try {
+    const ThemeAll = await Theme.findAll({ raw: true });
+    res.send(
+      res.renderComponent(MainPage, {
+        title: "Reg page",
+        thems: ThemeAll,
+      })
+    );
 
+  } catch ({ message }) {
+    res.json(message);
+  }
+})
 
 
 module.exports = router;

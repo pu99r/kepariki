@@ -20,6 +20,7 @@ function MainPage({ title, name, thems }) {
             {thems[2].name}
           </a>
         </button>
+        
       </div>
     </Layout>
   );

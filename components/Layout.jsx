@@ -14,7 +14,7 @@ function Layout({ title, children , name}) {
         <link rel="stylesheet" href="/styles/style.css" />
         <script defer src="/scripts/script.js" />
       </head>
-      <h1 className="NavBar">Игрок {name} !!!</h1>
+      <h1 className="NavBar">Игрок: {name}</h1>
       <body>{children}</body>
     </html>
   );

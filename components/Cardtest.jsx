@@ -22,6 +22,8 @@ function CardTest({ title, name, id, thems, themeqa, qustionid }) {
                 Next
               </button>
               <input name="id" type="hidden" value={id} />
+              <input name="name" type="hidden" value={name} />
+              <input name="rightanswer" type="hidden" value={themeqa[qustionid].answer} />
               <input name="questionid" type="hidden" value={qustionid} />
             </form>
             <div>
